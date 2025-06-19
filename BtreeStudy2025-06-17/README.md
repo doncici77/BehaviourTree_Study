@@ -1,2 +1,2 @@
-# BehaviourTree
+# Practices
 
