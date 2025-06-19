@@ -1,5 +1,12 @@
 fileFormatVersion: 2
 guid: b3146b291aa8c8b43a9c3c6181528153
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305932
+  packageName: Brawler Animations - Free
+  packageVersion: 1.0.1
+  assetPath: Assets/Brawler Animations Sample/Animations/Atk_K_1.fbx
+  uploadId: 744451
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -16,8 +23,6 @@ ModelImporter:
     optimizeGameObjects: 0
     removeConstantScaleCurves: 0
     motionNodeName: 
-    rigImportErrors: 
-    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
@@ -56,7 +61,14 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.3462743
+        functionName: OnAvailableNextMotions
+        data: 
+        objectReferenceParameter: {fileID: 11400000, guid: 45ffdf74eb9b52f4db4546bffcd88fbf, type: 2}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
@@ -900,8 +912,7 @@ ModelImporter:
     hasTranslationDoF: 1
     hasExtraRoot: 0
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 8595e0a7f8893ba46acdf8019eb5a8bf,
-    type: 3}
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 8595e0a7f8893ba46acdf8019eb5a8bf, type: 3}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
   humanoidOversampling: 1
@@ -913,10 +924,3 @@ ModelImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 305932
-  packageName: Brawler Animations - Free
-  packageVersion: 1.0.1
-  assetPath: Assets/Brawler Animations Sample/Animations/Atk_K_1.fbx
-  uploadId: 744451

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using NPC_Example.FSM;
+using UnityEngine;
 using UnityEngine.AI;
 
 namespace NPC_Example.Behaviours.BT
@@ -12,11 +13,13 @@ namespace NPC_Example.Behaviours.BT
         {
             this.transform = owner.transform;
             this.agent = owner.GetComponent<NavMeshAgent>();
+            this.motionController = owner.GetComponent<MotionController>();
         }
 
         // owner
         public Transform transform { get; set; }
         public NavMeshAgent agent { get; set; }
+        public MotionController motionController { get; set; }
 
         // target
         public Transform target { get; set; }

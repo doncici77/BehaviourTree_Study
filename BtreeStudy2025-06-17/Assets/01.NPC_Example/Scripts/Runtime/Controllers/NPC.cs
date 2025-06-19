@@ -33,6 +33,7 @@ namespace NPC_Example.Controllers
                 .Selector()
                     .Sequence()
                         .Seek(_seekAngle, _seekRadius, _seekHeight, _seekMaxDistance, _seekTargetMask,_seekObstacleMask)
+                        .Attack()
                     .CompleteCurrentComposite()
                     .RandomSelector()
                         .Patrol(_seekAngle, _seekRadius, _seekHeight, _seekMaxDistance, _seekTargetMask, _seekObstacleMask, _patrolRadius, _groundMask)

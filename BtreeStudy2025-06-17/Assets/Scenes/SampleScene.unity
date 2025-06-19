@@ -119,6 +119,55 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &270402652
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 270402654}
+  - component: {fileID: 270402653}
+  m_Layer: 0
+  m_Name: Test chop tree
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &270402653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270402652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e776b3eba2c954740bd16d10b1b75340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _terrain: {fileID: 382890092}
+  _stumpPrefab: {fileID: 2564689540000093438, guid: ecd637603ef428d4ea1c2495fbb3929c, type: 3}
+  _terrainMask:
+    serializedVersion: 2
+    m_Bits: 8
+--- !u!4 &270402654
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270402652}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -205,8 +254,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0.38778615, y: -0.47619116, z: 0.24630262, w: 0.74979925}
+  m_LocalPosition: {x: 72.77437, y: 18.95417, z: 44.800495}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -953,7 +1002,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3503390713768643983, guid: 184b8dff420ab3c4b97db3f6edb93d46, type: 3}
       propertyPath: _groundMask.m_Bits
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3503390713768643983, guid: 184b8dff420ab3c4b97db3f6edb93d46, type: 3}
       propertyPath: _seekTargetMask.m_Bits
@@ -1011,11 +1060,39 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 8738138122491117606, guid: 184b8dff420ab3c4b97db3f6edb93d46, type: 3}
+      propertyPath: m_AngularSpeed
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738138122491117606, guid: 184b8dff420ab3c4b97db3f6edb93d46, type: 3}
+      propertyPath: m_StoppingDistance
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8176722406199309770, guid: 184b8dff420ab3c4b97db3f6edb93d46, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8296172669470655573}
   m_SourcePrefab: {fileID: 100100000, guid: 184b8dff420ab3c4b97db3f6edb93d46, type: 3}
+--- !u!1 &8296172669470655572 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8176722406199309770, guid: 184b8dff420ab3c4b97db3f6edb93d46, type: 3}
+  m_PrefabInstance: {fileID: 5338039350666430852}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8296172669470655573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8296172669470655572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d517ee0b9472b449e9464ff5d71320, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1028,3 +1105,4 @@ SceneRoots:
   - {fileID: 1329904005}
   - {fileID: 382890093}
   - {fileID: 5338039350666430852}
+  - {fileID: 270402654}

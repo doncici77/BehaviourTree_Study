@@ -8,6 +8,13 @@ namespace NPC_Example.Behaviours.BT
     /// </summary>
     public partial class Builder
     {
+        public Builder Attack()
+        {
+            Node node = new Attack(_tree);
+            Attach(_current, node);
+            return this;
+        }
+
         public Builder Condition(string propertyName)
         {
             Node node = new Condition(_tree, propertyName);
